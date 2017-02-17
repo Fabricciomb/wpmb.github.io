@@ -1,0 +1,8 @@
+composer.lock
+vendor/
+wp-content/plugins
+wp-content/languages/
+wp-config.php
+.htaccess
+node_modules
+wp-content/uploads
