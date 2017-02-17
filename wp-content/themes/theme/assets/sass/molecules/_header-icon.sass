@@ -1,0 +1,31 @@
+.icon
+	+breakpoint(mobile)
+		+col(3)
+		+clear
+	+breakpoint(tablet)
+		+col(2)
+		+clear
+	+breakpoint(full)
+		+col(1)
+		+clear
+	+icon
+	cursor: pointer
+	color: $colorheadericon
+	line-height: 3.2em
+	height: 3.2em
+	background: transparent
+	border: 0
+	&:before
+		color: $colorheadericon
+		+font-size(20px)
+	&:hover
+		color: $colorheadericonhover
+		&:before
+			color: $colorheadericonhover
+		&:focus
+			&:before
+				+text-shadow
+				color: $colordefault1
+	&:active
+		+text-shadow
+		color: $colordefault1
